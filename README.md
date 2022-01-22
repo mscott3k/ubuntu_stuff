@@ -1,9 +1,8 @@
 # ubuntu_stuff
 install notes, helpful info, etc
 
+____
+- Contents:
+  - [Pi-Hole local DNS resolution](pi-hole_dns.md)
 
-### fix pi-hole local DNS resolution
-``` bash
-sudo ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
-```
- This links dynamic resolver file to systemd-resolve file that has overridden DNS server settings. 
+____
