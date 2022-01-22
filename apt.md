@@ -28,6 +28,8 @@
     - allows install/management of gnome extensions
     - extension list/settings are synced to gist via [Extensions Sync](https://extensions.gnome.org/extension/1486/extensions-sync/) - [github](https://github.com/oae/gnome-shell-extensions-sync)
     - *need google-chrome-stable for chrome plugin; doesn't work with snap browsers!*
+  - menulibre
+    - edit gnome app menu items, icons, etc
 
 
 
@@ -54,5 +56,11 @@
         sudo add-apt-repository ppa:openmw/openmw
         sudo apt-get update
         sudo apt-get install openmw openmw-launcher
+      ```
+  - [Lutris](lutris.net)
+    - Install:
+      ``` bash
+        sudo add-apt-repository ppa:lutris-team/lutris
+        sudo apt-get update
       ```
    
