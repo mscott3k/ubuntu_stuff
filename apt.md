@@ -57,6 +57,43 @@
         sudo apt-get update
         sudo apt-get install openmw openmw-launcher
       ```
+  - [wine](winehq.org)
+    - Install: 
+    
+      *If you have previously installed a Wine package from another repository, please remove it and any packages that depend on it (e.g., wine-mono, wine-gecko, winetricks) before attempting to install the WineHQ packages, as they may cause dependency conflicts.*
+
+      If your system is 64 bit, enable 32 bit architecture (if you haven't already):
+      ``` bash
+        sudo dpkg --add-architecture i386 
+      ```
+      
+      Download and add the repository key:
+      ``` bash
+        wget -nc https://dl.winehq.org/wine-builds/winehq.key
+        sudo apt-key add winehq.key
+      ```
+      
+      Add the repository:
+        - Ubuntu 21.10	
+          ``` 
+            sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ impish main' 
+            sudo apt update
+          ```
+
+      Then install one of the following packages:
+        - Stable branch	
+          ```
+            sudo apt install --install-recommends winehq-stable
+          ```
+        - Development branch	
+          ```
+            sudo apt install --install-recommends winehq-devel
+          ```
+        - Staging branch	
+          ```
+            sudo apt install --install-recommends winehq-staging
+          ```
+          - [source](https://wiki.winehq.org/Ubuntu)
   - [Lutris](lutris.net)
     - Install:
       ``` bash
