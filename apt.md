@@ -80,6 +80,10 @@
           sudo apt-get update
           sudo apt-get install docker-ce docker-ce-cli containerd.io
           ```
+       - Add user to group
+          ```
+          sudo usermod -aG docker $USER
+          ```
   - [OpenMW](openmw.org/en)
     - Install:
       ``` bash
