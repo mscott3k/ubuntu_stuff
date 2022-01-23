@@ -38,24 +38,24 @@
     - *needed for gnome-shell-extensions; snap versions won't work for chrome plugin*
       - Setup key with:
         ``` bash
-          wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
+        wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
         ```
       - Setup repository with:
         ``` bash
-          sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'      
+        sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'      
         ```
       - Setup package with:
         ``` bash
-          sudo apt-get update 
-          sudo apt-get install google-chrome-stable
+        sudo apt-get update \
+        sudo apt-get install google-chrome-stable
         ```
         - [source](https://www.ubuntuupdates.org/ppa/google_chrome)
   - [OpenMW](openmw.org/en)
     - Install:
       ``` bash
-        sudo add-apt-repository ppa:openmw/openmw
-        sudo apt-get update
-        sudo apt-get install openmw openmw-launcher
+      sudo add-apt-repository ppa:openmw/openmw \
+      sudo apt-get update \
+      sudo apt-get install openmw openmw-launcher 
       ```
   - [wine](winehq.org)
     - Install: 
@@ -64,34 +64,34 @@
 
       If your system is 64 bit, enable 32 bit architecture (if you haven't already):
       ``` bash
-        sudo dpkg --add-architecture i386 
+      sudo dpkg --add-architecture i386 
       ```
       
       Download and add the repository key:
       ``` bash
-        wget -nc https://dl.winehq.org/wine-builds/winehq.key
-        sudo apt-key add winehq.key
+      wget -nc https://dl.winehq.org/wine-builds/winehq.key \
+      sudo apt-key add winehq.key
       ```
       
       Add the repository:
         - Ubuntu 21.10	
           ``` 
-            sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ impish main' 
-            sudo apt update
+          sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ impish main' \
+          sudo apt update
           ```
 
       Then install one of the following packages:
         - Stable branch	
           ```
-            sudo apt install --install-recommends winehq-stable
+          sudo apt install --install-recommends winehq-stable
           ```
         - Development branch	
           ```
-            sudo apt install --install-recommends winehq-devel
+          sudo apt install --install-recommends winehq-devel
           ```
         - Staging branch	
           ```
-            sudo apt install --install-recommends winehq-staging
+          sudo apt install --install-recommends winehq-staging
           ```
           - [source](https://wiki.winehq.org/Ubuntu)
   - [Lutris](lutris.net)
