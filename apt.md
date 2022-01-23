@@ -10,6 +10,7 @@
   - python3-pip
   - mingw-w64
   - cmake
+  - nethogs
   - htop
     - having htop around is useful even though I mainly use btop lately
   - lm-sensors
