@@ -16,6 +16,8 @@
 - openra
   - FOSS game engine for C&C, Red Alert, Dune 2000, etc - [link](openra.net)
   - **NOTE:** requires original game assets, etc. Check server or [The Internet Archive](archive.org)
+- code
+  - vscode
 ____
 ### install all 
 
