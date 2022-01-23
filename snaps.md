@@ -22,5 +22,5 @@ ____
 ### install all 
 
 ``` bash
-  sudo snap install bitwarden brave discord spotify btop openra
+sudo snap install bitwarden brave discord spotify btop openra code
 ```
