@@ -7,6 +7,9 @@
 - ### packages: 
   - git
   - curl
+  - python3-pip
+  - mingw-w64
+  - cmake
   - htop
     - having htop around is useful even though I mainly use btop lately
   - lm-sensors
@@ -30,8 +33,6 @@
     - *need google-chrome-stable for chrome plugin; doesn't work with snap browsers!*
   - menulibre
     - edit gnome app menu items, icons, etc
-  - python3-pip
-  - mingw-w64
 
 
 
