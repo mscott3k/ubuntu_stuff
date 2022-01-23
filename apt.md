@@ -2,7 +2,7 @@
   ## packages in ubuntu repos
   **install all**
   ``` bash
-    sudo apt install git curl htop lm-sensors net-tools terminator gnome-shell-extensions
+  sudo apt install --install-recommends git curl htop lm-sensors net-tools terminator gnome-shell-extensions
   ```
 - ### packages: 
   - git
@@ -30,6 +30,8 @@
     - *need google-chrome-stable for chrome plugin; doesn't work with snap browsers!*
   - menulibre
     - edit gnome app menu items, icons, etc
+  - python3-pip
+  - mingw-w64
 
 
 
